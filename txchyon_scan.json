@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-02-09T08:06:02.310360",
+  "version": "1.0.0",
+  "project_path": "C:\\Users\\NefuTrades\\txchyon-labs",
+  "scan_time": 5.3,
+  "files_scanned": 26,
+  "scores": {
+    "seo_score": 78,
+    "complexity_score": 96,
+    "overall_score": 85,
+    "seo_grade": "C",
+    "complexity_grade": "A",
+    "overall_grade": "B"
+  },
+  "seo_issues": [
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\404.html",
+      "issue_type": "missing_canonical",
+      "severity": "info",
+      "message": "Missing canonical link (recommended for SEO)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\404.html",
+      "issue_type": "missing_og_title",
+      "severity": "info",
+      "message": "Missing Open Graph title (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\404.html",
+      "issue_type": "missing_og_description",
+      "severity": "info",
+      "message": "Missing Open Graph description (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\404.html",
+      "issue_type": "missing_og_image",
+      "severity": "info",
+      "message": "Missing Open Graph image (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\404.html",
+      "issue_type": "missing_og_url",
+      "severity": "info",
+      "message": "Missing Open Graph URL (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\index.html",
+      "issue_type": "missing_canonical",
+      "severity": "info",
+      "message": "Missing canonical link (recommended for SEO)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\index.html",
+      "issue_type": "missing_og_title",
+      "severity": "info",
+      "message": "Missing Open Graph title (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\index.html",
+      "issue_type": "missing_og_description",
+      "severity": "info",
+      "message": "Missing Open Graph description (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\index.html",
+      "issue_type": "missing_og_image",
+      "severity": "info",
+      "message": "Missing Open Graph image (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\index.html",
+      "issue_type": "missing_og_url",
+      "severity": "info",
+      "message": "Missing Open Graph URL (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\_not-found.html",
+      "issue_type": "missing_canonical",
+      "severity": "info",
+      "message": "Missing canonical link (recommended for SEO)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\_not-found.html",
+      "issue_type": "missing_og_title",
+      "severity": "info",
+      "message": "Missing Open Graph title (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\_not-found.html",
+      "issue_type": "missing_og_description",
+      "severity": "info",
+      "message": "Missing Open Graph description (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\_not-found.html",
+      "issue_type": "missing_og_image",
+      "severity": "info",
+      "message": "Missing Open Graph image (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\out\\_not-found.html",
+      "issue_type": "missing_og_url",
+      "severity": "info",
+      "message": "Missing Open Graph URL (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_title",
+      "severity": "critical",
+      "message": "Missing <title> tag",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_meta_description",
+      "severity": "warning",
+      "message": "Missing meta description tag",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_canonical",
+      "severity": "info",
+      "message": "Missing canonical link (recommended for SEO)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_og_title",
+      "severity": "info",
+      "message": "Missing Open Graph title (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_og_description",
+      "severity": "info",
+      "message": "Missing Open Graph description (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_og_image",
+      "severity": "info",
+      "message": "Missing Open Graph image (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\layout.tsx",
+      "issue_type": "missing_og_url",
+      "severity": "info",
+      "message": "Missing Open Graph URL (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_title",
+      "severity": "critical",
+      "message": "Missing <title> tag",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_meta_description",
+      "severity": "warning",
+      "message": "Missing meta description tag",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_canonical",
+      "severity": "info",
+      "message": "Missing canonical link (recommended for SEO)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_og_title",
+      "severity": "info",
+      "message": "Missing Open Graph title (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_og_description",
+      "severity": "info",
+      "message": "Missing Open Graph description (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_og_image",
+      "severity": "info",
+      "message": "Missing Open Graph image (recommended for social sharing)",
+      "line_number": null
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\src\\app\\page.tsx",
+      "issue_type": "missing_og_url",
+      "severity": "info",
+      "message": "Missing Open Graph URL (recommended for social sharing)",
+      "line_number": null
+    }
+  ],
+  "complexity_issues": [
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\package-lock.json",
+      "issue_type": "long_file",
+      "severity": "warning",
+      "message": "File has 6549 lines (recommended: < 500)",
+      "line_number": null,
+      "metric_value": 6549
+    },
+    {
+      "file_path": "C:\\Users\\NefuTrades\\txchyon-labs\\router\\package-lock.json",
+      "issue_type": "long_file",
+      "severity": "warning",
+      "message": "File has 1517 lines (recommended: < 500)",
+      "line_number": null,
+      "metric_value": 1517
+    }
+  ],
+  "summary": {
+    "total_issues": 31,
+    "critical_issues": 2,
+    "warnings": 4,
+    "info": 25
+  }
+}
