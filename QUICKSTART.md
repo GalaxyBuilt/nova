@@ -24,6 +24,10 @@ python -m nova_freemium.cli scan <project_folder>
 
 # Export to JSON
 python -m nova_freemium.cli scan <project_folder> --json --output report.json
+
+# Premium scan (requires license)
+export NOVA_LICENSE_KEY='your-license-key'
+python -m nova_freemium.cli scan <project_folder> --premium
 ```
 
 ## What's Been Built
