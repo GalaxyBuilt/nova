@@ -26,7 +26,8 @@ def cli():
 @click.argument('project_path', type=click.Path(exists=True))
 @click.option('--json', 'output_json', is_flag=True, help='Export results as JSON')
 @click.option('--output', '-o', type=click.Path(), help='Output file path')
-def scan(project_path: str, output_json: bool, output: str):
+@click.option('--premium', is_flag=True, help='Enable premium features (requires license)')
+def scan(project_path: str, output_json: bool, output: str, premium: bool):
     """Scan a project for SEO and complexity issues."""
     
     console.print(Panel.fit(
@@ -45,6 +46,57 @@ def scan(project_path: str, output_json: bool, output: str):
         
         scanner = ProjectScanner()
         results = scanner.scan_project(Path(project_path))
+        
+        # Premium features
+        if premium:
+            from nova_premium.license_manager import LicenseManager
+            
+            if not LicenseManager.check_license():
+                console.print(LicenseManager.get_upgrade_message())
+                console.print("\n[yellow]Continuing with freemium scan...[/yellow]\n")
+            else:
+                # Run premium SEO checks
+                from nova_premium.advanced_seo import AdvancedSEOScanner
+                from nova_shared.utils import get_project_files
+                from nova_shared.language_detection import LanguageDetector
+                
+                console.print("[green]✓ Premium license validated[/green]")
+                progress.update(task, description="Running premium SEO checks...")
+                
+                premium_scanner = AdvancedSEOScanner()
+                premium_issues = []
+                
+                # Get web files for premium scanning
+                web_files = [f for f in get_project_files(str(project_path), LanguageDetector.get_scannable_extensions()) 
+                            if LanguageDetector.is_web_file(f)]
+                
+                for file_path in web_files:
+                    from nova_shared.utils import read_file_safe
+                    content = read_file_safe(file_path)
+                    if not content:
+                        continue
+                    
+                    # Premium checks
+                    premium_issues.extend(premium_scanner.check_duplicate_meta_tags(content, file_path))
+                    premium_issues.extend(premium_scanner.check_broken_links(content, file_path))
+                    premium_issues.extend(premium_scanner.detect_structured_data(content, file_path))
+                
+                # Project-level checks
+                premium_issues.extend(premium_scanner.validate_sitemap(Path(project_path)))
+                premium_issues.extend(premium_scanner.validate_robots_txt(Path(project_path)))
+                
+                # Add premium issues to results
+                results['premium_seo_issues'] = [
+                    {
+                        'file_path': issue.file_path,
+                        'issue_type': issue.issue_type,
+                        'severity': issue.severity,
+                        'message': issue.message,
+                        'line_number': issue.line_number,
+                        'details': issue.details
+                    }
+                    for issue in premium_issues
+                ]
         
         progress.update(task, completed=True)
     
