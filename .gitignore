@@ -58,3 +58,4 @@ Thumbs.db
 # Project specific
 nova_report.json
 *.html
+.devnog/

@@ -1,0 +1,40 @@
+* Getting build dependencies for sdist...
+Traceback (most recent call last):
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\pyproject_hooks\_in_process\_in_process.py", line 389, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\pyproject_hooks\_in_process\_in_process.py", line 373, in main
+    json_out["return_val"] = hook(**hook_input["kwargs"])
+                             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\pyproject_hooks\_in_process\_in_process.py", line 317, in get_requires_for_build_sdist
+    return hook(config_settings)
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\build_meta.py", line 338, in get_requires_for_build_sdist
+    return self._get_build_requires(config_settings, requirements=[])
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\build_meta.py", line 301, in _get_build_requires
+    self.run_setup()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\build_meta.py", line 317, in run_setup
+    exec(code, locals())
+    ~~~~^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\__init__.py", line 117, in setup
+    return distutils.core.setup(**attrs)  # type: ignore[return-value]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\_distutils\core.py", line 160, in setup
+    dist.parse_config_files()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\dist.py", line 762, in parse_config_files
+    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\config\pyprojecttoml.py", line 72, in apply_configuration
+    config = read_configuration(filepath, True, ignore_option_errors, dist)
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\config\pyprojecttoml.py", line 140, in read_configuration
+    validate(subset, filepath)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NefuTrades\AppData\Roaming\Python\Python314\site-packages\setuptools\config\pyprojecttoml.py", line 61, in validate
+    raise ValueError(f"{error}\n{summary}") from None
+ValueError: invalid pyproject.toml config: `project`.
+configuration error: `project` must not contain {'long_description_content_type'} properties
+
+ERROR Backend subprocess exited when trying to invoke get_requires_for_build_sdist

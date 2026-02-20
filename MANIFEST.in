@@ -1,0 +1,18 @@
+# Include documentation files
+include README.md
+include LICENSE
+include QUICKSTART.md
+include IMPLEMENTATION_PLAN.md
+include TASKS.md
+include PUBLISHING_TO_PYPI.md
+
+# Include package files
+recursive-include nova_freemium *.py
+recursive-include nova_premium *.py
+recursive-include nova_shared *.py
+
+# Exclude unnecessary files
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude .DS_Store
